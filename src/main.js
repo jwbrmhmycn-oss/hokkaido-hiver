@@ -102,7 +102,7 @@ app.innerHTML = `
           <span class="brand-mark">北</span><span>carnet / HOKKAIDO</span>
         </a>
         <nav class="nav" id="nav" aria-label="Navigation principale">
-          <a href="#route">La route</a><a href="#programme">Les 7 jours</a><a href="#pratique">Pratique</a><a href="#phrases">Phrases</a>
+          <a href="#route">La route</a><a href="#programme">Les 7 jours</a><a href="#pratique">Pratique</a><a href="#europe">Europe</a><a href="#phrases">Phrases</a>
         </nav>
         <div>
           <button class="share-btn" id="shareBtn" type="button">Partager le carnet ↗</button>
@@ -146,6 +146,14 @@ app.innerHTML = `
           <div class="tools-grid">
             <div class="tool-card"><h3>Budget doux</h3><p>Estimation par personne, hors vols et shopping. Les activités peuvent varier selon la météo et le niveau de ski.</p><div class="budget-total"><div><div class="mono" style="color:var(--blue); margin-bottom:6px;">Total estimé</div><div class="total-number">¥${money.format(total)}</div></div><div class="total-note">pour 7 jours<br>par personne</div></div><div class="budget-list">${budget.map(([label, value, percent]) => `<div class="budget-row"><span>${label}</span><div class="budget-bar"><i style="width:${percent}%"></i></div><strong>¥${money.format(value)}</strong></div>`).join('')}</div></div>
             <div class="tool-card"><h3>À mettre dans le sac</h3><p>Cochez au fil des préparatifs. Votre progression est enregistrée localement sur cet appareil.</p><div class="checklist-progress"><div class="progress-track"><i id="progressBar" style="width:0%"></i></div><span class="progress-count" id="progressCount">0 / ${checklist.length}</span></div><div class="check-items">${checklist.map(([label, group], index) => `<label class="check-item"><input type="checkbox" data-check="${index}" data-group="${group}"><span>${label}</span></label>`).join('')}</div><div class="check-controls"><button class="small-btn" id="checkAll" type="button">Tout cocher</button><button class="small-btn" id="resetChecks" type="button">Réinitialiser</button></div></div>
+          </div>
+          <div class="europe-links" id="europe">
+            <div class="europe-heading"><div><div class="section-kicker mono">Repères Europe</div><h3>Trois lectures utiles<br>avant de réserver.</h3></div><p>Des liens à garder sous la main pour mieux situer les prix, la visibilité des restaurants auprès d’une clientèle chinoise et les évolutions des plateformes de réservation.</p></div>
+            <div class="europe-grid">
+              <a class="europe-link" href="https://www.klarr.net/blog/ticket-moyen-restaurant" target="_blank" rel="noopener noreferrer"><span class="europe-index">01</span><span><strong>Ticket moyen d’un restaurant en Europe</strong><small>Repères 2026, calcul midi / soir et restauration traditionnelle ou rapide.</small></span><b>↗</b></a>
+              <a class="europe-link" href="https://www.klarr.net/blog/clientele-chinoise-restaurant-deepseek-doubao" target="_blank" rel="noopener noreferrer"><span class="europe-index">02</span><span><strong>DeepSeek, Doubao et clientèle chinoise</strong><small>À savoir : ces assistants ne s’appuient pas toujours sur les mêmes sources que les outils occidentaux.</small></span><b>↗</b></a>
+              <a class="europe-link europe-warning" href="https://www.klarr.net/actualites/thefork-rachat-american-express" target="_blank" rel="noopener noreferrer"><span class="europe-index">03</span><span><strong>Point de vigilance : TheFork / American Express</strong><small>Le rachat annoncé n’est pas présenté comme finalisé : vérifiez les commissions, les contrats et la propriété des données avant toute décision.</small></span><b>↗</b></a>
+            </div>
           </div>
         </div>
       </section>

@@ -18,3 +18,8 @@
 
 ## Phrases utiles
 - [x] Le site propose des phrases utiles en japonais autour des marchés de Noël à visiter en Allemagne, avec lecture et traduction française.
+
+## Repères Europe et backlinks
+- [x] Le site comporte un lien vers l’article sur le ticket moyen d’un restaurant en Europe.
+- [x] Le site comporte un lien vers l’article sur DeepSeek, Doubao et la clientèle chinoise.
+- [x] Le site comporte une mise en garde liée au rachat annoncé de TheFork par American Express, avec un lien vers l’article source.

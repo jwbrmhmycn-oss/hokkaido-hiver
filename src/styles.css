@@ -115,6 +115,19 @@ a { color: inherit; text-decoration: none; }
 
 .pale-section { background: var(--paper); }
 .tools-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.europe-links { margin-top: 34px; padding: 28px; background: var(--ink); color: white; }
+.europe-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 22px; }
+.europe-heading .section-kicker { color: var(--saffron); margin-bottom: 8px; }
+.europe-heading h3 { margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: .98; letter-spacing: -.05em; }
+.europe-heading p { max-width: 410px; margin: 0; color: #b9cbd1; font-size: .82rem; line-height: 1.65; }
+.europe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.europe-link { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: start; min-height: 155px; padding: 17px; color: white; background: rgba(255,255,255,.06); border-top: 2px solid var(--blue); transition: background .2s, transform .2s; }
+.europe-link:hover { background: rgba(255,255,255,.12); transform: translateY(-3px); }
+.europe-link.europe-warning { border-top-color: var(--saffron); }
+.europe-index { color: var(--saffron); font-family: 'DM Mono', monospace; font-size: .67rem; }
+.europe-link strong { display: block; font-size: .82rem; line-height: 1.35; }
+.europe-link small { display: block; margin-top: 11px; color: #b9cbd1; font-size: .68rem; line-height: 1.55; }
+.europe-link > b { color: var(--saffron); font-size: 1rem; }
 .tool-card { background: var(--card); border: 1px solid var(--line); padding: 30px; }
 .tool-card h3 { margin: 0 0 8px; font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; letter-spacing: -.04em; }
 .tool-card > p { margin: 0 0 24px; color: var(--ink-soft); font-size: .85rem; line-height: 1.65; }
@@ -201,6 +214,11 @@ a { color: inherit; text-decoration: none; }
   .day-number { font-size: 2.2rem; }
   .day-side { grid-column: 1; grid-template-columns: 1fr 1fr; }
   .tools-grid, .phrase-list { grid-template-columns: 1fr; }
+  .europe-links { padding: 23px 18px; }
+  .europe-heading { display: block; }
+  .europe-heading p { margin-top: 16px; }
+  .europe-grid { grid-template-columns: 1fr; }
+  .europe-link { min-height: auto; }
   .tool-card { padding: 23px; }
   .budget-row { grid-template-columns: 86px 1fr auto; gap: 7px; }
   .phrase-layout { gap: 25px; }
