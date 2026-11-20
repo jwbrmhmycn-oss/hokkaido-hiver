@@ -23,3 +23,7 @@
 - [x] Le site comporte un lien vers l’article sur le ticket moyen d’un restaurant en Europe.
 - [x] Le site comporte un lien vers l’article sur DeepSeek, Doubao et la clientèle chinoise.
 - [x] Le site comporte une mise en garde liée au rachat annoncé de TheFork par American Express, avec un lien vers l’article source.
+
+## Hébergement gratuit
+- [x] Le site est publié sur GitHub Pages à l’adresse gratuite du projet `https://jwbrmhmycn-oss.github.io/hokkaido-hiver/`.
+- [x] Le build Vite utilise le préfixe `/hokkaido-hiver/` pour que les assets fonctionnent sous le sous-chemin GitHub Pages.

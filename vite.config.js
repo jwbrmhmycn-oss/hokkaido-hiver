@@ -1,5 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/hokkaido-hiver/' : '/'
+  root: 'dev',
+  publicDir: '../public',
+  base: command === 'build' ? '/hokkaido-hiver/' : '/',
+  server: {
+    fs: { allow: ['..'] }
+  }
 }));
